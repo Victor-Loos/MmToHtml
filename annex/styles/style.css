@@ -11,7 +11,7 @@ header{ /* garde le header toujours en haut de page et audessus des autres élé
     position: fixed; 
     top: 0;
     width: 100%;
-    z-index: 1; 
+    z-index: 99; 
     background: rgb(100, 148, 251, 0.8); /* couleur avec une opacité de 0.8 */
     width: 100%;
     height: 66px;
@@ -47,7 +47,7 @@ header{ /* garde le header toujours en haut de page et audessus des autres élé
 /* Fin du header */
 
 
-ol {
+ul {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -81,19 +81,19 @@ li:hover::before {
     width: 100%;
 }
 
-ol li:nth-child(1)::before {
+ul li:nth-child(1)::before {
     background: #4285f4;
 }
 
-ol li:nth-child(2)::before {
+ul li:nth-child(2)::before {
     background: #db4437;
 }
 
-ol li:nth-child(3)::before {
+ul li:nth-child(3)::before {
     background: #f4b400;
 }
 
-ol li:nth-child(4)::before {
+ul li:nth-child(4)::before {
     background: #0f9d58;
 }
 
@@ -108,23 +108,23 @@ li:hover {
 
 .hid {
       transition: all .3s ease-in-out;
+ display: none;
+
 
 }
 
-.hoverWrapper:hover .hid {
- display: flex;
- display: contents;
+.Front:hover #hid {
+ display: block;
+    padding: 60;
+
 }
 
-.hoverWrapper .hid {
+.Front #hid {
  display: none;
 }
 
-
-
-.bouton {
-  font: 22px "Open Sans", Helvetica, Arial, sans-serif;
-  padding: 5px 36px;
+ul li ul{
+    margin: 0;
+    padding: 0;
 }
-
 
