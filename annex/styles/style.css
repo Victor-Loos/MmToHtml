@@ -114,6 +114,11 @@ li:hover {
     transform: translateX(20px);
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 .Titre{
     display: flex;
     justify-content: center;
