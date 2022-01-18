@@ -27,10 +27,11 @@ header{ /* garde le header toujours en haut de page et audessus des autres élé
     float: left;
 }
 .m-right{ /* place à droite */
-    float: right;
     width: 80%;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .logo{  
@@ -82,19 +83,31 @@ li:hover::before {
 }
 
 ul li:nth-child(1)::before {
-    background: #4285f4;
+    background: rgb(100, 148, 251, 0.8);
+}
+ul li ul li:nth-child(1)::before {
+    background-color: transparent;
 }
 
 ul li:nth-child(2)::before {
     background: #db4437;
 }
+ul li ul li:nth-child(2)::before {
+    background-color: transparent;
+}
 
 ul li:nth-child(3)::before {
     background: #f4b400;
 }
+ul li ul li:nth-child(3)::before {
+    background-color: transparent;
+}
 
 ul li:nth-child(4)::before {
     background: #0f9d58;
+}
+ul li ul li:nth-child(4)::before {
+    background-color: transparent;
 }
 
 li:hover {
@@ -107,20 +120,15 @@ li:hover {
 }
 
 .hid {
-      transition: all .3s ease-in-out;
- display: none;
-
-
+  display: none;
 }
 
 .Front:hover #hid {
- display: block;
-    padding: 60;
-
+   display: block;
 }
 
 .Front #hid {
- display: none;
+   display: none;
 }
 
 ul li ul{
