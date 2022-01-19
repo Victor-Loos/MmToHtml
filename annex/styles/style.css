@@ -58,6 +58,7 @@ ul {
     width: 70%;
     list-style: none;
     margin-top: 200px;
+
 }
 
 li {
@@ -161,3 +162,41 @@ ul li ul {
     text-decoration: none;
     color: #707070;
 }
+
+
+/* --- Partie page de Texte --- */
+
+
+.Corps{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.BlocTitre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 50px;
+    width: 75%;
+}
+
+.BlocTitre1, .BlocTitre2 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
+
+}
+
+.BlocTexte1, .BlocTexte2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 50px;
+    width: 100%;
+}
+
