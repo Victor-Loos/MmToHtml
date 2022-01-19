@@ -94,7 +94,9 @@ button::after {
 }
 
 button:hover {
-    color: #2c2c2c;
+    color: #2c2c2c;    
+    background-color: white;
+
 }
 
 .button1::after {
@@ -106,6 +108,7 @@ button:hover {
 
 .button1:hover:after {
     width: 100%;
+    background-color: transparent;
 }
 
 

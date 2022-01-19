@@ -44,36 +44,39 @@ base.dependance.push(okSaroule);
 var Main = document.getElementById("MindMapTitre");
 Main.innerHTML = base.contenue;
 
-for (var i = 0; i < 19; i++) {
+for (var i = 0; i < 19; i++) { // Affiche 20 branches max
 
 // Ajouter 1 grand titre
-var Niveau1 = document.getElementById("Liste1");
-Niveau1.innerHTML += '<li class="Front">' + base.dependance[i].contenue + '<ul id=Titre'+ i +'></ul></li>'; 
+var Niveau1 = document.getElementById("Liste1"); // Récupère la liste principale
+Niveau1.innerHTML += '<li class="Front">' + base.dependance[i].contenue + '<ul id=Titre'+ i +'></ul></li>'; // Ajoute la liste du premier niveau (for). Ajoute un id pour la récupérer après.
+// .innerText -> écrit directement dans html
+// .innerHTML -> écrit et triate le rendu dans html
+// L'utilisateur pourais injecter du code ? -> plus sécurisé avec : var = document.createElement("li")
 
 for (var j = 0; j < 19; j++) { 
-	if ((base.dependance[i] == null) || (base.dependance[i].dependance[j] == null)) {break;}
+        	if ((base.dependance[i] == null) || (base.dependance[i].dependance[j] == null)) {break;} // Vérifie que les branches précédente et actuelle ne sont pas vide.
 
-      else{
-// Ajouter 1 sous titre
-var Niveau2 = document.getElementById("Titre"+ i);
-Niveau2.innerHTML += '<li id="hid">' + base.dependance[i].dependance[j].contenue + '<ul id=SousTitre'+ j +'></ul></li>'; 
-}
+              else{
+        // Ajouter 1 sous titre
+        var Niveau2 = document.getElementById("Titre"+ i);
+        Niveau2.innerHTML += '<li id="hid">' + base.dependance[i].dependance[j].contenue + '<ul id=SousTitre'+ j +'></ul></li>'; 
+        }
 
 for (var k = 0; k < 19; k++) {
       if ((base.dependance[i].dependance[j] == null) || (base.dependance[i].dependance[j].dependance[k] == null)) {break;}
       else{
-// Ajouter 1 sous sous titre
-var Niveau3 = document.getElementById("SousTitre"+ j);
-Niveau3.innerHTML += '<li id="hid">' + base.dependance[i].dependance[j].dependance[k].contenue + '<ul id=SoussousTitre'+ k +'></ul></li>'; 
-}
-}
+                // Ajouter 1 sous sous titre
+                var Niveau3 = document.getElementById("SousTitre"+ j);
+                Niveau3.innerHTML += '<li id="hid">' + base.dependance[i].dependance[j].dependance[k].contenue + '<ul id=SoussousTitre'+ k +'></ul></li>'; 
+        }
 
 for (var l = 0; l < 19; l++) {
       if ((base.dependance[i].dependance[j].dependance[k] == null) || (base.dependance[i].dependance[j].dependance[k].dependance[l] == null)) {break;}
       else{
-// Ajouter 1 sous sous sous titre
-var Niveau4 = document.getElementById("SoussousTitre"+ k);
-Niveau4.innerHTML += '<li id="hid">' + base.dependance[i].dependance[j].dependance[k].contenue + '<ul id=SoussousTitre'+ l +'></ul></li>'; 
+                // Ajouter 1 sous sous sous titre
+                var Niveau4 = document.getElementById("SoussousTitre"+ k);
+                Niveau4.innerHTML += '<li id="hid">' + base.dependance[i].dependance[j].dependance[k].contenue + '<ul id=SoussousTitre'+ l +'></ul></li>'; 
+        }
 }
 }
 
