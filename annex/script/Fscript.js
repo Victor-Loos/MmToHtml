@@ -1,12 +1,12 @@
 
 async function loadFile(fichier) {
-        let MindMap = await fichier.MindMap();
+        let mindMap = await fichier.MindMap();
         document.getElementById('resultat').textContent = MindMap;
       }
 
-      document.getElementById('inputFile').addEventListener('change', function() {
+      const MapChosen = document.getElementById('inputFile').addEventListener('change', function() {
         var fichier = new FileReader();
         fichier.onload = () => {
-          document.getElementById('resultat').textContent = fichier.result;
+          document.getElementById('resultat').textContent = fichier.resultat;
         }
-        fichier.readAsText(this.fichier[0]);
+        // fichier.readAsText(this.fichier[0]);
