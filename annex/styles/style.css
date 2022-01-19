@@ -32,18 +32,21 @@ header {
 }
 
 .m-left {
-    margin-top: 4px;
+    margin-top: 6px;
 }
 
 .upload {
-    color: #fff;
-    fill: #fff;
-    margin-top: 2px;
+    margin-top: 6px;
 }
 
 .Note-Title {
     margin: 0;
     padding: 0;
+}
+
+.blanc {
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -119,11 +122,6 @@ li:hover {
     transform: translateX(20px);
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 .Titre {
     display: flex;
     justify-content: center;
@@ -144,4 +142,22 @@ a {
 ul li ul {
     margin: 0;
     padding: 0;
+}
+
+.center {
+    text-decoration: none;
+    justify-content: space-between;
+    color: #707070;
+    width: 95%;
+    display: flex;
+    bottom: 0;
+    position: relative;
+    margin: auto;
+    padding-top: 100px;
+    font-size: small;
+}
+
+.linkedin {
+    text-decoration: none;
+    color: #707070;
 }
