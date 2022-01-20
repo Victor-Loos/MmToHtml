@@ -165,14 +165,16 @@ ul li ul {
 
 /* --- Partie page de Texte --- */
 
-.Corps {
+
+.Corps{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.BlocTitre {
+
+.Bloc {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,18 +183,17 @@ ul li ul {
     width: 75%;
 }
 
-.BlocTitre1,
-.BlocTitre2 {
+.BlocTitre {
     display: flex;
     justify-content: center;
     padding: 30px;
     width: 100%;
 }
 
-.BlocTexte1,
-.BlocTexte2 {
+.BlocTexte {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     padding: 30px;
     margin: 50px;
     width: 100%;
