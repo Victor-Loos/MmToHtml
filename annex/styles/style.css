@@ -165,14 +165,12 @@ ul li ul {
 
 /* --- Partie page de Texte --- */
 
-
-.Corps{
+.Corps {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 .Bloc {
     display: flex;
@@ -197,4 +195,8 @@ ul li ul {
     padding: 30px;
     margin: 50px;
     width: 100%;
+}
+
+#SousTitre2 li {
+    background-color: #2C2C2C;
 }
