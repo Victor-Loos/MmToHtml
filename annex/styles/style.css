@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #ffffff;
     background-color: #2C2C2C;
     font-family: 'Be Vietnam Pro', 'Courier New', Courier, monospace;
 }
@@ -15,7 +15,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 99;
-    background: rgb(100, 148, 251, 0.8);
+    background: #6494fbcc;
     /* couleur avec une opacité de 0.8 */
     width: 100%;
     height: 66px;
@@ -58,7 +58,6 @@ ul {
     width: 70%;
     list-style: none;
     margin-top: 200px;
-
 }
 
 li {
@@ -104,7 +103,7 @@ ul li ul li:nth-child(2)::before {
 }
 
 ul li:nth-child(3)::before {
-    background: #f4b400;
+    background: #f5b400;
 }
 
 ul li ul li:nth-child(3)::before {
@@ -166,14 +165,12 @@ ul li ul {
 
 /* --- Partie page de Texte --- */
 
-
-.Corps{
+.Corps {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 .BlocTitre {
     display: flex;
@@ -184,19 +181,19 @@ ul li ul {
     width: 75%;
 }
 
-.BlocTitre1, .BlocTitre2 {
+.BlocTitre1,
+.BlocTitre2 {
     display: flex;
     justify-content: center;
     padding: 30px;
     width: 100%;
-
 }
 
-.BlocTexte1, .BlocTexte2 {
+.BlocTexte1,
+.BlocTexte2 {
     display: flex;
     justify-content: space-between;
     padding: 30px;
     margin: 50px;
     width: 100%;
 }
-
