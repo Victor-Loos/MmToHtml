@@ -39,12 +39,3 @@ titre_site.id = "MindMapTitre";
 titre_site.innerText = "Tout doit être pouvoir";
 document.getElementById("blanc").appendChild(titre_site);
 /*************************************************/
-
-
-soubigcat.className = "salutations";
-
-
-let cat = document.createElement("li");
-cat.className = "Front";
-cat.appendChild(document.createTextNode(base.dependance[i].contenue));
-document.getElementById("salutations").appendChild(cat);
