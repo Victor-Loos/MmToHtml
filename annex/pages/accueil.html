@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <title>Mind Map</title>
-    <link rel="stylesheet" href="annex/styles/Fstyle.css">
-    <link rel="icon" type="image/svg+xml" href="annex/pic/icon.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../pic/icon.svg">
+    <link href="../styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Mind Map</title>
 </head>
 
 <body>
@@ -16,48 +19,28 @@
     <header role="header" id="test">
         <div class="inner">
             <div class="m-left">
-                <object data="annex/pic/icon.png" height="50px"></object>
+                <a href="#"><object data="../pic/icon.png" height="50px"></object></a>
             </div>
             <div class="m-center">
                 <a class="blanc" href="#">
-                    <h1 class="Note-Title">Balance ton .mm !</h1>
+                    <h1 class="Note-Title" id="MindMapTitre">Tout doit être pouvoir</h1>
                 </a>
             </div>
-            <div>
-                <object id="logo-cache" data="annex/pic/upload.png" height="50px"></object>
+            <div class="upload">
+                <a href="../../index.html">
+                    <object data="../pic/upload.png" height="50px"></object>
+                </a>
             </div>
         </div>
         </div>
     </header>
     <!--Fin en-tête de la page-->
 
-    <!-- Toute la partie bouton   -->
-    <div class="boutonV">
-
-        <!-- Debut de la partie bouton upload -->
-        <div class="imageUpload">
-
-            <button type="submit" class="button1">
-
-            <label for="fileInput">
-                <img src="annex/pic/upload.svg" height="100" width="120" />
-                <div class="TextUp">Veuillez inserer votre mind map</div>
-            </label>
-            <input type="file" id="fileInput">
-        </button>
-
-        </div>
-        <!-- Fin de la partie bouton upload -->
-
-
-        <div class="container">
-            <a href="annex/pages/accueil.html">
-                <button type="button" class="button1" name="boutonValider">Valider</button>
-            </a>
-        </div>
-
+    <div class="Titre">
+        <ul id="Liste1">
+        </ul>
     </div>
-    <!-- Fin de toute la partie bouton -->
+
 
     <footer class="footer">
 
@@ -95,8 +78,8 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="../script/script.js"></script>
 
-    <script type="text/javascript" src="annex/script/script.js"></script>
 </body>
 
 </html>
